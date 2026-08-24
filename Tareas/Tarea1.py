@@ -10,16 +10,11 @@ class Cifrado_Simetrico:
 
     def cifrar(self):
         cadenaCifrada = ""
-        for i in range(len(self.getMensaje())):
-            cadenaCifrada += format((ord(self.getMensaje()[i]) ^ ord (clave[i%len(clave)])),"02x")
-        print(cadenaCifrada)
-        return cadenaCifrada
+        
           
     def descifrar(self, mensajeCifrado):
         mensajeDescifrado = ""
-        for i in range(0,len(mensajeCifrado),2):
-            mensajeDescifrado += chr(int(mensajeCifrado[i:i+2],16) ^ ord(self.getClave()[i//2 % len(self.getClave())]))
-        print(mensajeDescifrado)
+        
 
 os.system('cls')
 mensaje = input("Introduzca el mensaje: ")
