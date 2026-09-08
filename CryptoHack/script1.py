@@ -1,4 +1,5 @@
 import base64
+from Crypto.Util.number import *
 
 def ejercicio1():
     vector = [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
@@ -17,11 +18,20 @@ def ejercicio3():
     cadenaB64 = base64.b64encode(cadenaBytes)
     print(cadenaB64.decode("utf=8"))
 
+def ejercicio4():
+    numerolong = 11515195063862318899931685488813747395775516287289682636499965282714637259206269
+    bandera = long_to_bytes(numerolong)
+    print(bandera.decode("utf=8"))
+
+def ejercicio5():
+    cadena = "label"
+    bandera = ""
+    
 
 
 
-
-
-ejercicio1()
-ejercicio2()
-ejercicio3()
+#ejercicio1()
+#ejercicio2()
+#ejercicio3()
+#ejercicio4()
+ejercicio5()
