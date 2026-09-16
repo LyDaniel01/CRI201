@@ -25,7 +25,7 @@ def ejercicio4():
 
 def ejercicio5():
     cadena = "label"
-    bandera = ""
+    print(cadena)
     
 
 
